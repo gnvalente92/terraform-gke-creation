@@ -10,7 +10,7 @@ Official documentation [Terraform GKE cluster management](https://www.terraform.
 ## Creating a `Kubernetes` cluster in `GCP`
 
 ### Create a credentials file for the Kubernetes master
-```json
+```terraform
 variable "master_auth_user" {
   description = "Username for Kubernetes master"
   default     = "<USER_NAME>"
