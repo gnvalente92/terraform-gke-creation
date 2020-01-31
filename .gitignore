@@ -1,4 +1,5 @@
 credentials
+creation/gke_credentials.tf
 
 # Local .terraform directories
 **/.terraform/*
