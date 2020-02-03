@@ -1,6 +1,3 @@
-credentials
-creation/gke/container_cluster/gke_credentials.tf
-
 # Local .terraform directories
 **/.terraform/*
 
@@ -31,4 +28,10 @@ override.tf.json
 # Include tfplan files to ignore the plan output of command: terraform plan -out=tfplan
 # example: *tfplan*
 
+
+# Mac specific
 .DS_STORE
+
+# Personalized
+credentials
+creation/gke/container_cluster/gke_credentials.tf
