@@ -36,11 +36,11 @@ Do the necessary changes to the file `./creation/gke/container_cluster/variables
 Run the following commands to provision the cluster:
 ```sh
 cd ./creation/gke/container_cluster/
-terraform init # will setup terraform and download all needed dependencies
-terraform plan # will present a plan of the actions to be performed
+terraform init # will setup the terraform project and download all needed dependencies
+terraform plan # will present a plan of the actions to be performed, review the output before creating the cluster
 terraform apply # will apply the plan, creating the k8s cluster
 ```
 
 ## Make changes
 
-This is a simple demonstration on how to setup a `Kubernetes` cluster in GCP, many other configurations can be chosen for a `Kubernetes` cluster running on `GCP`. Check official documentation to make changes: [Terraform GKE cluster management](https://www.terraform.io/docs/providers/google/r/container_cluster.html).
+This is a simple demonstration on how to setup a `Kubernetes` cluster in GCP, mostly with the default configurations. Many adjustments and configurations can be chosen for a `Kubernetes` cluster running on `GCP`. Check official documentation to make changes: [Terraform GKE cluster management](https://www.terraform.io/docs/providers/google/r/container_cluster.html).
