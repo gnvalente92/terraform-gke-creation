@@ -41,6 +41,15 @@ terraform plan # will present a plan of the actions to be performed, review the 
 terraform apply # will apply the plan, creating the k8s cluster
 ```
 
+## Destroying resources
+
+One of the many advantages of using `terraform` to provision a `Kubernetes` cluster in `GCP` is the ability to destroy everything that was created at once. When creating a cluster, multiple resources are provisioned (several VMs are created, for intance). With `terraform`, it is possible to destroy all resources in one go and without needing to remember them or to list. To destroy all resources, run the following commands:
+
+```sh
+cd ./creation/gke/container_cluster/
+terraform destroy # will destroy all previously created cluster resources
+```
+
 ## Make changes
 
 This is a simple demonstration on how to setup a `Kubernetes` cluster in GCP, mostly with the default configurations. Many adjustments and configurations can be chosen for a `Kubernetes` cluster running on `GCP`. Check official documentation to make changes: [Terraform GKE cluster management](https://www.terraform.io/docs/providers/google/r/container_cluster.html).
